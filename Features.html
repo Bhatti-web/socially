@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socially - Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="features-body">
+
+    <div class="features-container">
+        <h1 class="main-feature-title anim">Our Premium Features</h1>
+        <p class="feature-intro anim">Behtareen tools takay aap naye doston se asaani se mil sakein.</p>
+
+        <div class="points-wrapper">
+            <ul class="points-list anim">
+                <li>✅ <strong>Safe & Secure:</strong> 100% Encryption.</li>
+                <li>✅ <strong>Smart Match:</strong> AI Based Friendships.</li>
+                <li>✅ <strong>Global Chat:</strong> Connect Worldwide.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-subtitle anim">Visual Gallery</h2>
+        <div class="carousel-container anim">
+            <div class="carousel-slide">
+                <img src="image-1.jpg" alt="1">
+                <img src="matches.jpg" alt="2">
+                <img src="privacy.jpg" alt="3">
+                <img src="group.jpg" alt="4">
+                <img src="global .jpg" alt="5">
+            </div>
+        </div>
+
+       <h2 class="section-subtitle anim">Watch Highlights</h2>
+
+<div class="slider-wrapper anim">
+    <!-- Buttons -->
+    <button class="nav-btn prev" onclick="scrollSlider(-1)">&#10094;</button>
+    <button class="nav-btn next" onclick="scrollSlider(1)">&#10095;</button>
+
+    <!-- Video Grid -->
+    <div class="video-grid" id="videoSlider">
+        <div class="video-card"><video autoplay muted loop playsinline src="video-1.mp4"></video></div>
+        <div class="video-card"><video autoplay muted loop playsinline src="video-2.mp4"></video></div>
+        <div class="video-card"><video autoplay muted loop playsinline src="video-3.mp4"></video></div>
+        <div class="video-card"><video autoplay muted loop playsinline src="video-4.mp4"></video></div>
+
+    </div>
+</div>
+
+             
+
+        <div style="margin: 50px 0;">
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </div>
+<script>
+    function scrollSlider(direction) {
+        const slider = document.getElementById('videoSlider');
+        const cardWidth = slider.querySelector('.video-card').clientWidth;
+        slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+    }
+</script>
+</body>
+
+</html>
